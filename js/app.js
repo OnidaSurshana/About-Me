@@ -12,7 +12,7 @@ var answers = [
   "yes",
   "yes"
 ];
-
+//Questions 1-5
 function quiz(query, ans) {
   var response1 = prompt(query).toLowerCase();
   if(response1 === ans || response1 === ans.charAt(0)) {
@@ -27,4 +27,53 @@ while (i < questions.length) {
   quiz(questions[i], answers[i]);
   i++;
 }
+//Question 6 
+//Question is to guess age - Answer is 18
 
+//Set & Store a variable for age
+
+//Set & Store Answer
+
+//Prompt user to answer question 
+
+//Convert response to a number
+
+//Store response
+
+//Compare response to age 
+
+//Check & Respond if correct
+
+//Is response more than age?
+
+//Respond "too high"
+
+//Is reponse lower than age?
+
+//Respond "too low"
+
+//Else respond "Not a number"
+
+//If it's wrong, and question hasn't been asked 4 times, ask again
+
+
+//Question 7
+//Random question that has 4 answers
+
+//step 1: Set up array with 4 correct answers
+
+//step 2: Set up loop for 6 tries 
+
+//step 2a: Ask the question
+
+//step 2b: Store user's response
+
+//step 2c: Compare answer to each item in array
+
+//step 2d: If correct answer is found, respond "correct"
+
+//step 2e: Repeat from step 2a, if wrong less than 6 times
+
+//step 3: Show correct answers
+
+//Done!! :)
