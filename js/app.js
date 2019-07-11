@@ -4,7 +4,7 @@ function startGame(){
 var myFirstQuestion = "Whats your name?"
 
 var name = prompt(myFirstQuestion)
-var myFirstReply = "Hello " + name + "my name is Ricardo Collymore";
+var myFirstReply = "Hello " + name + "my name is Ricardo";
 alert(myFirstReply);
 
 var mySecondQuestion = "Is my middle name Alexander";
@@ -43,6 +43,7 @@ if (fithResponse === "yes" || fithResponse === "y" ) {
 } else{
   alert("incorrect")
 }
+
 }
 
 startGame();
