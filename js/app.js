@@ -1,49 +1,79 @@
 "use strict";
-function startGame(){
 
-var myFirstQuestion = "Whats your name?"
-
-var name = prompt(myFirstQuestion)
-var myFirstReply = "Hello " + name + "my name is Ricardo";
-alert(myFirstReply);
-
-var mySecondQuestion = "Is my middle name Alexander";
-
-var secondResponse = prompt(mySecondQuestion).toLowerCase(); 
-
-if (secondResponse === "yes" || secondResponse === "y"  ) {
-  alert("correct");
-} else {
-  alert("incorrect");
+var questions = [
+  "Is my middle name Alexander?",
+  "I prefer cats to dogs, is this true?",
+  "My favorite country is Russia, not Barbados, is this true?",
+  "My biggest fear is being drowned in a tsunami, but i never bothered to learn how to swim. is this true?" 
+];
+var answers = [
+  "yes",
+  "no",
+  "yes",
+  "yes"
+];
+//Questions 1-5
+function quiz(query, ans) {
+  var response1 = prompt(query).toLowerCase();
+  if(response1 === ans || response1 === ans.charAt(0)) {
+    alert("Correct");
+  }
+  else {
+    alert("Incorrect");
+  }
 }
-
-var myThirdQuestion = "I prefer cats to dogs, is this true?"
-
-var thirdResponse = prompt(myThirdQuestion).toLowerCase();//make everything the user types become lower case.
-if (thirdResponse === "no" || secondResponse === "n" ) {
-  alert("correct");
-} else {
-  alert("incorrect");
+var i = 0;
+while (i < questions.length) {
+  quiz(questions[i], answers[i]);
+  i++;
 }
+//Question 6 
+//Question is to guess age - Answer is 18
 
-var myFourthQuestion = "My favorite country is Russia, not Barbados, is this true?"
+//Set & Store a variable for age
 
-var fourthResponse = prompt(myFourthQuestion)
-if (fourthResponse === "yes" || thirdResponse === "y" ) {
-  alert("correct");
-} else{
-  alert("incorrect")
-}
+//Set & Store Answer
 
-var myFithQuestion = "My biggest fear is being drowned in a tsunami, but i never bothered to learn how to swim. is this true?"
+//Prompt user to answer question 
 
-var fithResponse = prompt(myFithQuestion)
-if (fithResponse === "yes" || fithResponse === "y" ) {
-  alert("correct");
-} else{
-  alert("incorrect")
-}
+//Convert response to a number
 
-}
+//Store response
 
-startGame();
+//Compare response to age 
+
+//Check & Respond if correct
+
+//Is response more than age?
+
+//Respond "too high"
+
+//Is reponse lower than age?
+
+//Respond "too low"
+
+//Else respond "Not a number"
+
+//If it's wrong, and question hasn't been asked 4 times, ask again
+
+
+//Question 7
+//Random question that has 4 answers
+
+//step 1: Set up array with 4 correct answers
+
+//step 2: Set up loop for 6 tries 
+
+//step 2a: Ask the question
+
+//step 2b: Store user's response
+
+//step 2c: Compare answer to each item in array
+
+//step 2d: If correct answer is found, respond "correct"
+
+//step 2e: Repeat from step 2a, if wrong less than 6 times
+
+//step 3: Show correct answers
+
+//Done!! :)
