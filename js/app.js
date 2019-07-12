@@ -1,5 +1,6 @@
 "use strict";
-
+var counter = 0;
+var maxTries = 4;
 var questions = [
   "Is my middle name Alexander?",
   "I prefer cats to dogs, is this true?",
@@ -26,6 +27,24 @@ var i = 0;
 while (i < questions.length) {
   quiz(questions[i], answers[i]);
   i++;
+}
+
+var uNumber = 10;
+var randomNumber = Math.floor(Math.random() * uNumber) +1;
+
+while (attempts != randomNumber) {
+  var attempts = prompt("pick a number between 1 and " + uNumber);
+  counter += 1;
+
+  if (counter > maxTries) {
+   
+    alert("you ran out of tries");
+    break
+  }
+
+  if (attempts === randomNumber) {
+    alert("congratulations you got it!");
+  }
 }
 //Question 6 
 //Question is to guess age - Answer is 18
