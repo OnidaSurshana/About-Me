@@ -5,13 +5,17 @@ var questions = [
   "Is my middle name Alexander?",
   "I prefer cats to dogs, is this true?",
   "My favorite country is Russia, not Barbados, is this true?",
-  "My biggest fear is being drowned in a tsunami, but i never bothered to learn how to swim. is this true?" 
+  "My biggest fear is being drowned in a tsunami, but i never bothered to learn how to swim. is this true?",
+  "I think modern art and modern garbage are the same, is this true?"
+
 ];
 var answers = [
   "yes",
   "no",
   "yes",
+  "yes",
   "yes"
+  
 ];
 //Questions 1-5
 function quiz(query, ans) {
@@ -29,7 +33,21 @@ while (i < questions.length) {
   i++;
 }
 
-var uNumber = 10;
+var uNumber = 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
 var randomNumber = Math.floor(Math.random() * uNumber) +1;
 
 while (attempts != randomNumber) {
@@ -38,7 +56,7 @@ while (attempts != randomNumber) {
 
   if (counter > maxTries) {
    
-    alert("you ran out of tries");
+    alert("you ran out of tries, the correct answer was " + randomNumber);
     break
   }
 
@@ -46,6 +64,12 @@ while (attempts != randomNumber) {
     alert("congratulations you got it!");
   }
 }
+
+
+
+
+
+
 //Question 6 
 //Question is to guess age - Answer is 18
 
