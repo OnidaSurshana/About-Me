@@ -1,9 +1,9 @@
 body { 
   margin: 0;
   padding: 0;
-  background-image: url(img\vlqz2mpmdi011.png) no-repeat;
-  background-size: cover;
-  background-color: rgb(63, 13, 59);
+  background-image: url("../img/vlqz2mpmdi011.png");
+  /* background-size: cover;
+  background-color: rgb(63, 13, 59); */
 }
 .box{
   width: 450px;

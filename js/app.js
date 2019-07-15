@@ -29,39 +29,32 @@ function quiz(query, ans) {
 }
 var i = 0;
 while (i < questions.length) {
-  quiz(questions[i], answers[i]);
+  // quiz(questions[i], answers[i]);
   i++;
 }
 
-var uNumber = 10
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
+var uNumber = 10;
 var randomNumber = Math.floor(Math.random() * uNumber) +1;
 
 while (attempts != randomNumber) {
-  var attempts = prompt("pick a number between 1 and " + uNumber);
+  var attempts = parseInt(prompt("pick a number between 1 and " + uNumber));
+
+  if (attempts === randomNumber) {
+    alert("congratulations you got it!");
+  } else if (attempts > randomNumber) {
+    alert("Too high.");
+  }
+  else if (attempts < randomNumber) {
+    alert("Too low.");
+  } else {
+    alert("Please enter a digit -_-");
+  }
   counter += 1;
 
   if (counter > maxTries) {
    
     alert("you ran out of tries, the correct answer was " + randomNumber);
     break
-  }
-
-  if (attempts === randomNumber) {
-    alert("congratulations you got it!");
   }
 }
 
